@@ -4,6 +4,7 @@ import Planet from "./Planet";
 import { categories as baseCategories } from "../data/categories";
 import type { Category } from "../types/types";
 import { useMemo, useState } from "react";
+import { pub } from "../lib/pub";
 
 type Selected = Category | null;
 const centerCategory: Category = {
@@ -19,7 +20,7 @@ const centerCategory: Category = {
         "En 2016, al vivir solo, comprendí el valor de los sacrificios familiares.", 
         "La partida de mi gato y perro me enseñó a atesorar cada momento.", 
     ],
-    images: ["src/assets/images/h_1.jpg", "src/assets/images/h_2.jpg"],
+    images: [pub("images/h_1.jpg"), pub("images/h_2.jpg")],
 };
 
 const RING_FACTORS = [0.34, 0.47, 0.60, 0.72, 0.84, 0.94];
