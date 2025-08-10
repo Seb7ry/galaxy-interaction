@@ -71,7 +71,7 @@ const Modal: FC<PropsWithChildren<ModalProps>> = ({ title, onClose, children, im
                     <div className="relative mx-auto h-48 w-36 sm:h-56 sm:w-40 md:h-64 md:w-48 lg:h-72 lg:w-56">
                         {/* Foto A */}
                         <div
-                            className="absolute left-2 top-0 h-40 w-28 sm:h-48 sm:w-32 md:h-56 md:w-36 lg:h-64 lg:w-44 -rotate-6
+                            className="absolute left-0 top-0 h-40 w-28 sm:h-48 sm:w-32 md:h-56 md:w-36 lg:h-64 lg:w-44 -rotate-6
                          rounded-xl overflow-hidden shadow-xl
                          border border-white/20 bg-gradient-to-br from-white/30 to-white/10"
                             style={imgA ? {
@@ -82,7 +82,7 @@ const Modal: FC<PropsWithChildren<ModalProps>> = ({ title, onClose, children, im
                         />
                         {/* Foto B */}
                         <div
-                            className="absolute right-2 bottom-0 h-40 w-28 sm:h-48 sm:w-32 md:h-56 md:w-36 lg:h-64 lg:w-44 rotate-6
+                            className="absolute right-0 bottom-0 h-40 w-28 sm:h-48 sm:w-32 md:h-56 md:w-36 lg:h-64 lg:w-44 rotate-6
                          rounded-xl overflow-hidden shadow-xl
                          border border-white/20 bg-gradient-to-br from-white/30 to-white/10"
                             style={imgB ? {

@@ -6,6 +6,21 @@ import type { Category } from "../types/types";
 import { useMemo, useState } from "react";
 
 type Selected = Category | null;
+const centerCategory: Category = {
+    id: 0,
+    name: "Mi historia",
+    description: 
+    "¡Hola! Mi nombre es Sebastián Murillo.",
+    color: "bg-white",
+    ring: -1,
+    body: "Soy de Chaparral. Me criaron mi madre y mi abuela, quienes me enseñaron que lo más importante en la vida es vivir con libertad y sin remordimientos.",
+    bullets: [
+        "La muerte de mi abuela me recordó disfrutar y dejar fluir la vida.",
+        "En 2016, al vivir solo, comprendí el valor de los sacrificios familiares.", 
+        "La partida de mi gato y perro me enseñó a atesorar cada momento.", 
+    ],
+    images: ["src/assets/images/h_1.jpg", "src/assets/images/h_2.jpg"],
+};
 
 const RING_FACTORS = [0.34, 0.47, 0.60, 0.72, 0.84, 0.94];
 
@@ -44,16 +59,8 @@ export default function GalaxyMap() {
             {/* SOL con etiqueta debajo */}
             <div className="absolute left-1/2 top-1/2 z-20 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
                 <button
-                    aria-label="Yo"
-                    onClick={() =>
-                        setSelected({
-                            id: 0,
-                            name: "Yo",
-                            description: "Nodo central: una síntesis de quién soy.",
-                            color: "bg-white",
-                            ring: -1,
-                        })
-                    }
+                    aria-label={centerCategory.name}
+                    onClick={() => setSelected(centerCategory)}
                     className={[
                         "relative flex items-center justify-center rounded-full bg-white/95 text-black font-semibold shadow-xl",
                         "h-16 w-16 md:h-24 md:w-24",
@@ -81,7 +88,7 @@ export default function GalaxyMap() {
                     className="mt-2 select-none whitespace-nowrap text-white/85 font-planet tracking-wide"
                     style={{ fontSize: "clamp(10px, 1.3vmin, 14px)" }}
                 >
-                    Yo
+                    {centerCategory.name}
                 </span>
             </div>
 
