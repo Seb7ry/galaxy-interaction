@@ -33,7 +33,7 @@ const Modal: FC<PropsWithChildren<ModalProps>> = ({ title, onClose, children, im
                 if (closing && (e.target as HTMLElement) === e.currentTarget) onClose();
             }}
             className={[
-                "fixed inset-0 z-50 flex items-center justify-center p-4",
+                "fixed inset-0 z-100 flex items-center justify-center p-4",
                 "bg-black/30 supports-[backdrop-filter]:bg-black/20",
                 "backdrop-blur-sm supports-[backdrop-filter]:backdrop-blur-md",
                 closing ? "animate-backdropOut" : "animate-backdropIn",
