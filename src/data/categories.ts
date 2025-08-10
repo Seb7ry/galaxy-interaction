@@ -1,0 +1,58 @@
+import type { Category } from "../types/types";
+
+export const categories: Category[] = [
+  {
+    id: 1,
+    name: "Mi historia",
+    description: "...",
+    color: "bg-sky-400",
+    ring: 0,
+    texture: "soft",
+  },
+  {
+    id: 2,
+    name: "Lo que me apasiona",
+    description: "...",
+    color: "bg-pink-400",
+    ring: 3,
+    texture: "banded",
+    sizeScale: 1.2,
+  },
+  {
+    id: 3,
+    name: "Mis habilidades",
+    description: "...",
+    color: "bg-emerald-400",
+    ring: 5,
+    texture: "rings",
+    sizeScale: 1.35,
+  },
+  {
+    id: 4,
+    name: "Mis valores",
+    description: "...",
+    color: "bg-amber-400",
+    ring: 1,
+    texture: "speckle",
+  },
+  {
+    id: 5,
+    name: "Mi estilo",
+    description: "...",
+    color: "bg-violet-400",
+    ring: 4,
+    texture: "customImg",
+    sizeScale: 1.6,
+    textureImg: "/textures/noise-soft.png",
+  },
+  {
+    id: 6,
+    name: "Lo que quiero ofrecer",
+    description: "...",
+    color: "bg-orange-400",
+    ring: 2,
+    texture: "soft",
+    sizeScale: 2,
+    labelOffset: -10,
+  },
+];

@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  @apply bg-black text-white;
+  background-image:
+    radial-gradient(1200px 600px at 50% 20%, rgba(31,41,55,0.35), transparent 60%),
+    radial-gradient(900px 500px at 80% 80%, rgba(17,24,39,0.4), transparent 60%);
+  background-color: #000;
+}
