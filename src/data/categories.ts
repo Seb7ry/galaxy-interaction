@@ -1,20 +1,20 @@
-
 import type { Category } from "../types/types";
+import { pub } from "../lib/pub";
 
 export const categories: Category[] = [
   {
     id: 1,
     name: "Lo que quiero aprender",
-    description: "Seguir creciendo en desarrollo de software, trabajar en una multinacional extranjera y crear un producto propio que me brinde libertad.",
+    description:
+      "Seguir creciendo en desarrollo de software, trabajar en una multinacional extranjera y crear un producto propio que me brinde libertad.",
     color: "bg-orange-500",
     ring: 0,
     texture: "soft",
     sizeScale: 1,
     speedSec: 24,
-    body:
-      "Buscar experiencias que me reten y me saquen de mi zona de confort.",
+    body: "Buscar experiencias que me reten y me saquen de mi zona de confort.",
     bullets: ["Mejorar mi inglés 🗣️", "Aprender a bailar", "Dominar estructuras y sintaxis de software"],
-    images: ["src/assets/images/aa_1.jpg", "src/assets/images/aa_2.jpg"],
+    images: [pub("images/aa_1.jpg"), pub("images/aa_2.jpg")],
   },
   {
     id: 2,
@@ -32,7 +32,7 @@ export const categories: Category[] = [
       "Expresarme a través del dibujo y la pintura.",
       "Explorar mundos y desafíos en los videojuegos.",
     ],
-    images: ["src/assets/images/a_2.jpg", "src/assets/images/a_1.jpg"],
+    images: [pub("images/a_2.jpg"), pub("images/a_1.jpg")],
   },
   {
     id: 3,
@@ -50,7 +50,7 @@ export const categories: Category[] = [
       "Blandas: comunicación, liderazgo y trabajo en equipo.",
       "Creativas: ideación, prototipado y diseño(+/-).",
     ],
-    images: ["src/assets/images/mh_2.jpg", "src/assets/images/mh_1.jpg"],
+    images: [pub("images/mh_2.jpg"), pub("images/mh_1.jpg")],
   },
   {
     id: 4,
@@ -61,15 +61,14 @@ export const categories: Category[] = [
     texture: "speckle",
     sizeScale: 1,
     speedSec: 25,
-    body:
-      "La mayoría vienen de mi familia, otros de lo que he vivido.",
+    body: "La mayoría vienen de mi familia, otros de lo que he vivido.",
     bullets: [
       "No negociables: lealtad y honestidad.",
       "Respeto y empatía.",
       "Responsabilidad y gratitud.",
       "Perseverancia y servicio(+/-).",
     ],
-    images: ["src/assets/images/v_2.jpg", "src/assets/images/v_1.jpg"],
+    images: [pub("images/v_2.jpg"), pub("images/v_1.jpg")],
   },
   {
     id: 5,
@@ -86,7 +85,7 @@ export const categories: Category[] = [
       "Mantengo un estilo profesional pero auténtico.",
       "Destaco por la experiencia y el enfoque que aporto.",
     ],
-    images: ["src/assets/images/s_1.jpg", "src/assets/images/s_2.png"],
+    images: [pub("images/s_1.jpg"), pub("images/s_2.png")],
   },
   {
     id: 6,
@@ -98,13 +97,8 @@ export const categories: Category[] = [
     sizeScale: 2,
     speedSec: 26,
     labelOffset: -10,
-    body:
-      "Dependiendo del ámbito o sector al cual me quiero enfocar.",
-    bullets: [
-      "Confianza",
-      "Creatividad",
-      "Profesionalismo",
-    ],
-    images: ["src/assets/images/q_1.png", "src/assets/images/q_2.png"],
+    body: "Dependiendo del ámbito o sector al cual me quiero enfocar.",
+    bullets: ["Confianza", "Creatividad", "Profesionalismo"],
+    images: [pub("images/q_1.png"), pub("images/q_2.png")],
   },
 ];
